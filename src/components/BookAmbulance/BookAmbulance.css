@@ -1,0 +1,145 @@
+.container-Ambulance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container-Ambulance h1 {
+    background-color: #7FA1C3;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #1E2A5E;
+    
+}
+
+form {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #7FA1C3;
+    padding: 10px 0px;
+    max-height: 40vh; 
+    overflow-y: auto; 
+}
+
+.input_slot {
+    padding: 0%;
+    margin: 10px;
+    width: 90%;
+}
+
+.input_slot input,.input_slot select {
+    width: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+
+.container-Ambulance .Ambulance-form .input_slot select {
+    width: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+
+.input_slot select:focus {
+    border: none;
+}
+
+.input_slot select option {
+    color: grey;
+    font-size: 14px;
+}
+
+/* Button styling */
+.bookApt-btn {
+    background-color: #1E2A5E;
+    color: #d2e0fb;
+    padding: 10px 10px;
+    box-shadow: none;
+    border: 0px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.bookApt-btn:hover{
+    background-color: #007bff;
+    color: #f4f4f4;
+}
+
+/* Media query for smaller screens */
+@media (max-height: 800px) {
+    form {
+        max-height: 75vh; 
+        overflow-y: auto;  /* Add vertical scroll if content exceeds viewport */
+        padding: 20px; /* Adjust padding for smaller viewports */
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        max-height: 60vh; 
+        overflow-y: auto;
+    }
+}
+
+@media (max-height: 600px) {
+    form {
+        max-height: 60vh; 
+        overflow-y: auto;  /* Enable scrolling */
+    }
+}
+
+  .Ambulance-form::-webkit-scrollbar {
+    width: 10px; height: 12px;
+    margin-top: 10px;
+  }
+  
+  .Ambulance-form::-webkit-scrollbar-track {
+    background: #1E2A5E; /* Light gray background */
+    border-radius: 10px; /* Optional: round the track corners */
+  }
+  
+  /* Scrollbar thumb (the draggable part) */
+  .Ambulance-form::-webkit-scrollbar-thumb {
+    background: #d2e0fb; /* Blue thumb color */
+    border-radius: 10px; /* Round the thumb corners */
+  }
+  
+  /* Thumb hover effect */
+  .Ambulance-form::-webkit-scrollbar-thumb:hover {
+    background: #d2e0fb; /* Darker blue when hovered */
+  }
+  .custom-scrollbar {
+    position: absolute;
+    right: 0; /* Align to the right */
+    top: 50px; /* Start below the top edge */
+    height: calc(100% - 100px); /* Shorter scrollbar (reduce height by 100px) */
+    width: 10px; /* Match original scrollbar width */
+    background: #f4f4f4; /* Scrollbar track color */
+    border-radius: 5px;
+  }
+  
+  .custom-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Customize thumb size */
+    background: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }

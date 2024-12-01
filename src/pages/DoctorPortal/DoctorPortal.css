@@ -1,0 +1,65 @@
+.main-pportal-container{
+    background-color: aliceblue;
+    display: flex;
+}
+
+.right-container{
+    width: 100%;
+    background-color: #55679C;
+    padding: 20px 20px;
+}
+.welcome-Doctor{
+    text-align: left;
+    border: 0;   
+}
+.Doctor-info{
+    padding: 10px 10px;
+    display: flex;
+}
+.Doctor-info-left-container,.Doctor-info-right-container{
+    width: 50%;
+}
+.Doctor-info-heading,.Doctor-history-heading{
+    background-color: #55679C;
+    border-bottom: #D2E0FB 1px solid;
+    width: 90%;
+    text-align: left;
+}
+.Doctor-history-content,.Doctor-info-content{
+    padding: 10px 10px;
+    gap: 10px;
+}
+.Doctor-info-content h2,.Doctor-history-content h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.upcoming-appointments-heading,.recent-consultations-heading{
+    text-align: left;
+}
+.upcoming-appointments-content{
+    display: flex;
+}
+.appointment-doctor,.appointment-time,.appointment-date,.view-appointment-info{
+    border: 1px solid #D2E0FB;
+    width: 25%;
+}
+.upcoming-appointments-content h3{
+    border-bottom: #D2E0FB 1px solid;
+    padding: 10px 10px;
+}
+.appointment-doctor h4,.appointment-time h4,.appointment-date h4{
+    padding: 10px 10px;
+}
+.upcoming-appointments,.recent-consultations{
+    margin-bottom: 20px;
+}
+.view-full-details{
+    margin: 10px 10px;
+    background-color: #D2E0FB;
+    color: #1e2a5e;
+    border: none;
+}
+.no-upcoming-appts-heading{
+    padding: 10px 10px;
+    border: 1px solid #D2E0FB;
+}

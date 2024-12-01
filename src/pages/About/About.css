@@ -1,0 +1,77 @@
+.about-us {
+    padding: 2rem;
+    background-color: #1e2a5e;
+    font-family: 'Arial', sans-serif;
+    color: #D2E0FB;
+  }
+  
+  .hero-about {
+    text-align: center;
+    padding: 2rem 0;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .hero-about h1 {
+    background-color: transparent;
+    color:#D2E0FB;
+    font-size: 2.5rem;
+  }
+  
+  .hero-about p {
+    font-size: 1.2rem;
+  }
+  
+  .mission-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .mission-vision h2 {
+    font-size: 2rem;
+    color: #D2E0FB;
+  }
+  
+  .mission-vision p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .values {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .values h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #D2E0FB;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .value-item {
+    background-color: #D2E0FB;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1e2a5e;
+  }
+  
+  .value-item p {
+    font-size: 1rem;
+    color: #1e2a5e;
+  }
+  

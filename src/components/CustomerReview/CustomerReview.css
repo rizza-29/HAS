@@ -1,0 +1,25 @@
+.review-card-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+.review-container h1{
+    background-color: #D2E0FB;
+    color: #1e2a5e;
+    font-size: 44px;
+    margin-top: 15px;
+    padding: 15px;
+}
+@media (max-width: 768px) {
+    .review-card-container {
+        flex-direction: column; /* Change to vertical layout */
+        gap: 20px; /* Adjust gap for vertical stacking */
+    }
+
+    .review-container h1 {
+        font-size: 36px; /* Optional: adjust font size for smaller screens */
+    }
+}

@@ -1,0 +1,114 @@
+.container-custom {
+  background-color: #FEF9D9;
+  position: relative; 
+}
+
+.login-btn,
+.SignUp-btn {
+  border: none;
+  box-shadow: none;    
+  color: #1E2A5E;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container-custom {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+header, .footer {
+  background-color: #1e2a5e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  flex: 1; 
+  padding-left: 0; 
+  position: relative;
+  transition: padding-left 0.3s ease; 
+  margin-left: 0; 
+  background-color: #D2E0FB;
+}
+
+main.sidebar-open { 
+  filter: blur(5px);
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section {
+  display: flex;
+  position: relative;
+  flex: 1;
+  transition: filter 0.3s ease-in-out;
+}
+
+.main-section.menu-open .main-content {
+  filter: blur(5px);
+  margin-left: 0%;
+}
+
+.main-content {
+  flex: 1;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Sidebar styles */
+.side-navbar-container {
+  position: fixed; 
+  top: 60px; /* Stick to the top */
+  left: -250px; /* Start off-screen */
+  width: 250px; /* Fixed width for sidebar */
+  height: 100%; /* Full height */
+  background-color: #0056b3;
+  z-index: 2000;
+  transition: left 0.3s ease-in-out;
+}
+
+.side-navbar-container.open {
+  left: 0; /* Slide in when open */
+}
+
+.side-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav-list-items {
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.side-nav-list-items:hover {
+  background-color: #004090;
+}
+
+.sidebar-logo-container {
+  text-align: center;
+  padding: 10px;
+}
+.no-scroll {
+  overflow: hidden; /* Prevents scrolling */
+  height: 100vh; /* Ensure the body takes the full height */
+}
+.login-signUp-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
